@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asexualidad</title>
+    <link rel="icon" href="img/gay.ico"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/459dbaf163.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/jarallax.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LGBTIQ+</a>
+            <div class="menu" onclick="menuAccion();"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div class="desenfoque"></div>
+        <div class="cont">
+            <h2>Asexualidad<br><span>todos necesitamos amor</span></h2>
+        </div>
+        <ul class="pags">
+            <li style="--i:1;"><a href="index.html">inicio</a></li>
+            <li style="--i:2;"><a href="info.html">informacion general</a></li>
+            <li style="--i:3;"><a href="hete.html">heterosexualidad</a></li>
+            <li style="--i:4;"><a href="homo.html">homosexualidad</a></li>
+            <li style="--i:5;"><a href="inter.html">INTERSEXUALidad</a></li>
+            <li style="--i:6;"><a href="trans.html">TRANSexualidad</a></li>
+            <li style="--i:7;"><a href="afuera.html">otros generos</a></li>
+            <li style="--i:8"><a href="band.html">banderas</a></li>
+            <li style="--i:9"><a href="quiz.html">quiz</a></li>
+            <li style="--i:10"><a href="biblio.html">bibliografia</a></li>
+        </ul>
+    </header> 
+    <section class="data">
+        <h2>Qué es la asexualidad?</h2>
+        <div class="contenedor">
+            <div class="img">
+                <img src="img/img10.jpg" alt="lgbtiq">
+            </div>
+            <div class="contenido">
+                <p>
+                    La asexualidad se caracteriza porque la persona no experimenta atracción sexual hacia otras personas, o bien sólo siente esta atracción sexual hacia otras personas en condiciones muy determinadas o muy raramente y de forma muy puntual en su vida.<br>Se trata, por tanto, de una orientación sexual (como la homosexualidad, la bisexualidad o la heterosexualidad), y así lo reivindican mayoritariamente las personas del colectivo asexual.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="data">
+        <h2>soy asexual?</h2>
+        <div class="contenedor">
+            <div class="img">
+                <img src="img/img3.jpg" alt="lgbtiq">
+            </div>
+            <div class="contenido">
+                <p>
+                    Las personas asexuales pueden sentir (o no) deseo sexual, excitación sexual, interés romántico o intelectual por otras personas, y a veces tienen pareja. En general, suelen sentir también en menor medida interés por mantener contactos sexuales con otras personas.<br>Seguramente las personas asexuales experimentan, en general, menos deseo de contacto sexual, y menos excitación sexual, debido en parte a que, para ellas, las otras personas no son inductores del deseo o la excitación.<br>Algunas personas asexuales se masturban y otras no, algunas personas son sexualmente activas y otras no, algunas tienen pareja y otras no.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="barra"></div>
+    <footer>
+        <p>alumno santino cataldo</p>
+        <p>e.e.s.t.5 amancio williams</p>
+        <p>teleinformatica</p>
+        <p>profesor pablo abdala</p>
+    </footer>
+    <script>
+        function menuAccion(){
+            const menus = document.querySelector('.menu');
+            const header = document.querySelector('header');
+            menus.classList.toggle('active');
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

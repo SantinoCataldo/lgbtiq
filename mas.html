@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+    <link rel="icon" href="img2/gay.ico"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="mas">
+        <div class="boton">   
+            <button type="button" class="sonido" onclick="menuAccion();">desea continuar ?</button>
+        </div>
+        <div class="esc">
+            <h2 class="h2-1">felicidades encontraste la pagina escondida</h2>
+            <h2 class="h2-2">...</h2>
+            <img src="img/boton.png" alt="boton">
+            <h2 class="h2-3">ya te podes ir</h2>
+        </div>
+    </section>
+    
+    <script>
+         let boton = document.querySelector(".sonido")
+
+        boton.addEventListener("click", () => {
+            let etiquetaAudio = document.createElement("audio")
+            etiquetaAudio.setAttribute("src", "video/fondo.m4a")
+            etiquetaAudio.play()
+        })
+
+        function menuAccion(){
+            const boton = document.querySelector('.boton');
+            const section = document.querySelector('section');
+            boton.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+        
+    </script>
+</body>
+</html>

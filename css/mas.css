@@ -1,0 +1,98 @@
+*{
+    font-family: 'Bebas Neue', arial;
+}
+
+.mas{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #111;
+}    
+
+button{
+    padding: 8px 10px;
+    position: relative;
+    font-size: 30px;
+    background: #111;
+    text-transform: uppercase;
+    border: 1px #d780ff solid;
+    cursor: pointer;
+    color: #d780ff;
+    transition: .8s;
+    letter-spacing: 6px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
+    border-radius: 4px;
+}
+
+button:hover{
+    background: #d780ff;
+    
+    color: #111;
+    box-shadow: 0 0 10px #d780ff,
+                0 0 20px #d780ff,
+                0 0 50px #d780ff,
+                0 0 100px #d780ff;
+}
+
+.mas .esc{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.mas video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s;
+}
+
+.mas.active video{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mas.active button{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mas.active {
+    background: #111;
+}
+
+.mas.active .esc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mas .esc h2{
+    font-size: 80px;
+}
+
+.mas .esc img{
+    transition-delay: 16s;
+}
+
+.mas .esc .h2-1{
+    transition-delay: 4s;
+}
+
+.mas .esc .h2-2{
+    transition-delay: 9.3s;
+}
+
+.mas .esc .h2-3{
+    transition-delay: 16s;
+}

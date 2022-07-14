@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" href="img/gay.ico"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <script src="https://kit.fontawesome.com/459dbaf163.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/jarallax.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LGBTIQ+</a>
+            <div class="menu" onclick="menuAccion();"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div class="desenfoque"></div>
+        <div class="cont">
+            <h2>quiz<br><span>todos necesitamos amor</span></h2>
+        </div>
+        <ul class="pags">
+            <li style="--i:1;"><a href="index.html">inicio</a></li>
+            <li style="--i:2;"><a href="info.html">informacion general</a></li>
+            <li style="--i:3;"><a href="hete.html">heterosexualidad</a></li>
+            <li style="--i:4;"><a href="homo.html">homosexualidad</a></li>
+            <li style="--i:5;"><a href="ase.html">asexualidad</a></li>
+            <li style="--i:6"><a href="inter.html">intersexualidad</a></li> 
+            <li style="--i:7;"><a href="trans.html">TRANSexualidad</a></li>
+            <li style="--i:8;"><a href="afuera.html">otros generos</a></li>
+            <li style="--i:9"><a href="band.html">banderas</a></li>
+            <li style="--i:10"><a href="biblio.html">bibliografia</a></li>
+        </ul>
+    </header>
+        <section class="quiz">
+            <div class="quiz-cont">
+                <h2>quiz</h2>
+                <div id="p1" class="preg">
+                    <h3>a cual de estos generos no le atrae el sexo</h3>
+                        <input type="radio" id="1" name="p1"> 
+                    <label for="1">pansexual</label>
+                        <input type="radio" id="2" name="p1"> 
+                    <label  class="correcto" for="2">asexual</label>
+                        <input type="radio" id="3" name="p1"> 
+                    <label for="3">genero no binario</label>
+                </div>
+                <div id="p2" class="preg">
+                    <h3>cual siente atraccion por la personalidad más que en el sexo</h3>
+                        <input type="radio" id="4" name="p2"> 
+                    <label for="4" class="correcto">pansexual</label>
+                        <input type="radio" id="5" name="p2"> 
+                    <label for="5">bisexual</label>
+                        <input type="radio" id="6" name="p2"> 
+                    <label for="6">intersexual</label>
+                </div>
+                <div id="p3" class="preg">
+                    <h3>que es la distrofia de género</h3>
+                        <input type="radio" id="7" name="p3"> 
+                    <label for="7">cuya orientación sexual no es exclusivamente heterosexual</label>
+                        <input type="radio" id="8" name="p3"> 
+                    <label for="8">persona que no se identifica con una única identidad de género</label>
+                        <input type="radio" id="9" name="p3"> 
+                    <label for="9" class="correcto" >cuando su sexo biológico no coincide con su identidad de género</label>
+                </div>
+                <div id="p4" class="preg"> 
+                    <h3>las personas que tienen cuerpos que no coinciden con lo estrictamente masculino o femenino son:</h3>
+                        <input type="radio" id="10" name="p4"> 
+                    <label for="10">queer</label>
+                        <input type="radio" id="11" name="p4"> 
+                    <label for="11">bisexuales</label>
+                        <input type="radio" id="12" name="p4"> 
+                    <label for="12" class="correcto">intersexuales</label>
+                </div>
+                <div id="p5" class="preg">
+                    <h3>cual es la bandera lgbtiq+</h3>
+                        <input type="radio" id="13" name="p5">
+                    <label class="label-img1" for="13"></label>
+                        <input type="radio" id="14" name="p5">
+                    <label class="label-img2" for="14"></label>
+                </div>
+                <button type="submit" onclick="calcularRespuesta(),botonAccion()">corregir</button>
+            </div>
+        </section>
+        <div class="barra"></div>
+    <footer>
+        <p>alumno santino cataldo</p>
+        <p>e.e.s.t.5 amancio williams</p>
+        <p>teleinformatica</p>
+        <p>profesor pablo abdala</p>
+    </footer>
+        <script src="js/funcion.js"></script>
+        <script src="js/sweetalert2.min.js"></script>
+    <script>
+        function menuAccion(){
+            const menus = document.querySelector('.menu');
+            const header = document.querySelector('header');
+            menus.classList.toggle('active');
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
