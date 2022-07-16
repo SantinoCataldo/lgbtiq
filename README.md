@@ -1,1 +1,1 @@
-# lgbtiq
+Hacer un sitio web utilizando el framework Boostrap. El sitio comprenderá 1 página principal (index.html) + 10 páginas de información relacionada a la página principal + 1 página que contenga los créditos y bibliografía consultada- links-.
