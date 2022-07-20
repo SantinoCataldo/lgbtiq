@@ -294,14 +294,98 @@ header .pags li a:hover{
     height: 420px;
 }
 
-.data .contenedor .img img{
-    position: absolute;
-    top: 0;
-    left: 0;
+.data .img .img1,
+.data .img .img2,
+.data .img .img3,
+.data .img .img4,
+.data .img .img5,
+.data .img .img6,
+.data .img .img7,
+.data .img .img8,
+.data .img .img9,
+.data .img .img10,
+.data .img .img11,
+.data .img .img12,
+.data .img .img13,
+.data .img .img14
+{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
+
+.data .img .img1{
+    background: url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.data .img .img2{
+    background: url(../img/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.data .img .img3{
+    background: url(../img/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img4{
+    background: url(../img/img4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img5{
+    background: url(../img/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img6{
+    background: url(../img/img6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img7{
+    background: url(../img/img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img8{
+    background: url(../img/img8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img9{
+    background: url(../img/img9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img10{
+    background: url(../img/img10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img11{
+    background: url(../img/img11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img12{
+    background: url(../img/img12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img13{
+    background: url(../img/img13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.data .img .img14{
+    background: url(../img/img14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 .data .contenedor .contenido{
     position: absolute;
@@ -346,6 +430,14 @@ header .pags li a:hover{
     z-index: 5;
 }
 
+.data .contenedor .contenido h3{
+    position: relative;
+    font-weight: 300;
+    text-align: center;
+    font-size: 25px;
+    z-index: 5;
+}
+
 .data .contenedor .contenido ul{
     position: relative;
     z-index: 5;
@@ -353,7 +445,7 @@ header .pags li a:hover{
 
 .data .contenedor .contenido li a{
     text-decoration: none;
-    color: rgb(212, 179, 255);
+    color: #FCECD9;
     transition: .5s;
     font-size: 19px;
     position: relative;
